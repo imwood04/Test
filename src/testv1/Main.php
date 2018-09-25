@@ -1,6 +1,6 @@
 <?php
 
-namespace testv1;
+namespace Test;
 
 use pocketmine\server;
 use pocketmine\player;
