@@ -1,3 +1,9 @@
-name: TestV1
-
+name: Testv1
 api: [3.0.0-4.0.0]
+main: testv1\Main.php
+version: 1.0.0
+description: Test
+commands:
+   Test:
+      usage: /Test
+      description: Testing Command
