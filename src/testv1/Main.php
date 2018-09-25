@@ -19,9 +19,18 @@ class Main extends PluginBase{
     $this->getLogger->Info("Testv1 Has Been Disabled!");
     }
   
-  publick function onCommand(CommandSender sender, Command $cmd, string $label, array $args){
-    switch($cmd->getName(){
-      case "test":
-      $sender->addTitle("Hey Player this is a test");
-      $item = Item::get(276,0,1);
-      
+  public function onCommand(CommandSender sender, Command $cmd, string $label, array $args){
+    if ($sender indtanceof Player){
+         switch($cmd->getName(){
+             case "test":
+             $sender->addTitle("Hey Player this is a test");
+             $item = Item::get(276,0,1);
+             $inv = sender->getinventory();
+             $item->setCustomName("Testv1's Item");
+             $inv->addItem($item);
+           }elese{
+                $sender->sendMessage("Please Use This Command In Game Please!");
+                return true;
+           }
+    }
+  }
