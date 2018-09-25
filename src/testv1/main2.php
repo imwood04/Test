@@ -9,7 +9,7 @@ use pocketmine\command\Command;
 use pocketmine\event\Listener;
 use pocketmine\item\Item;
 
-class Main extends PluginBase{
+class main2 extends PluginBase{
   
   public function onEnable(){
     $this->getLogger->Info("Testv1 Has Been Enabled!");
