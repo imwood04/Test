@@ -19,7 +19,7 @@ class Main extends PluginBase{
     $this->getLogger->Info("Testv1 Has Been Disabled!");
     }
   
-  public function onCommand(CommandSender sender, Command $cmd, string $label, array $args){
+  public function onCommand(CommandSender, Command $cmd, string $label, array $args){
     if ($sender indtanceof Player){
          switch($cmd->getName()){
              case "test":
