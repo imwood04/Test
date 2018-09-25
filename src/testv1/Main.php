@@ -21,7 +21,7 @@ class Main extends PluginBase{
   
   public function onCommand(CommandSender sender, Command $cmd, string $label, array $args){
     if ($sender indtanceof Player){
-         switch($cmd->getName(){
+         switch($cmd->getName()){
              case "test":
              $sender->addTitle("Hey Player this is a test");
              $item = Item::get(276,0,1);
